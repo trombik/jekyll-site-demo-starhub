@@ -82,7 +82,7 @@ deploy your own content on _your_ S3, you need to:
 - create an IAM user to deploy in _your_ AWS console and assign the role to
   the user
 - add _Secrets_ (`AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`) to _your_
-  repository (see (how)[https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets))
+  repository (see [how](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets))
 - replace the bucket name in `deploy-s3.yml` with _your_ bucket name
 - enable GitHub Actions in _your_ repository
 - push your changes to `devel` branch
