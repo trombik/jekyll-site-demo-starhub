@@ -1,5 +1,11 @@
 # Example demo site
 
+## Requirements
+
+* ruby (2.6, or at least 2.4)
+* bundler (see https://bundler.io/ for installation)
+* git
+
 ## Install
 
 First, for the repository on GitHub.
