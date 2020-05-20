@@ -8,7 +8,7 @@
 
 ## Install
 
-First, for the repository on GitHub.
+First, fork the repository on GitHub.
 
 Next, checkout _your_ repository (replace `CHANGEME` with your GitHub ID).
 
