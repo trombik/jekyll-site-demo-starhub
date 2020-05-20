@@ -1,0 +1,37 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1580004613660",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::227373499457:user/jekyll-deploy"
+            },
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "arn:aws:s3:::jekyll-aws"
+        },
+        {
+            "Sid": "Stmt1580004528503",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::227373499457:user/jekyll-deploy"
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:DeleteObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::jekyll-aws/*"
+        },
+        {
+            "Sid": "Stmt1580004605770",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::jekyll-aws/*"
+        }
+    ]
+}

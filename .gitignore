@@ -1,0 +1,8 @@
+node_modules
+.jekyll-cache/
+_site/
+.bundle/
+*.swp
+# ignore Gemfile.lock until all bundler versions are 2.x
+Gemfile.lock
+.tweet-cache/
