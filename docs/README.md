@@ -66,3 +66,26 @@ using
 [serverless_static_website_with_basic_auth](https://github.com/dumrauf/serverless_static_website_with_basic_auth)
 is an implementation. Depending on your requirements, you also need TLS
 protection.
+
+## Customization
+
+This repository is a demo repository. The GitHub Actions is disabled. To
+deploy your own content on _your_ S3, you need to:
+
+- fork this repository
+- create a branch `devel`
+- modify the content
+- create a bucket in _your_ S3
+- configure the bucket so that it serves the files in the bucket (see
+  [how](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html))
+- create an IAM role for the deployment (see [deploy-s3-bucket-policy.json](https://github.com/trombik/jekyll-site-demo-starhub/blob/master/.github/workflows/deploy-s3-bucket-policy.json))
+- create an IAM user to deploy in _your_ AWS console and assign the role to
+  the user
+- add _Secrets_ (`AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`) to _your_
+  repository (see (how)[https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets))
+- replace the bucket name in `deploy-s3.yml` with _your_ bucket name
+- enable GitHub Actions in _your_ repository
+- push your changes to `devel` branch
+
+After these steps, whenever you push something to `devel` branch, the Jekyll
+site is deployed to S3 automatically.
