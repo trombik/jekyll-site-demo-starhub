@@ -1,5 +1,9 @@
 # Example demo site
 
+This repository demonstrates how to deploy a static website on AWS S3. If you
+are web designer please read this README. If you would like to know how to
+deploy, read [docs/README.md](docs/README.md).
+
 ## Requirements
 
 * ruby (2.6, or at least 2.4)
