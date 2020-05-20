@@ -35,7 +35,7 @@ The GitHub repository keeps all the contents and Jekyll installation. Nothing
 new here.
 
 A GitHub Workflow, `deploy-s3.yml`, is defined under
-`[.github/workflows](https://github.com/trombik/jekyll-site-demo-starhub/blob/master/.github/workflows/deploy-s3.yml)`.
+[.github/workflows](https://github.com/trombik/jekyll-site-demo-starhub/blob/master/.github/workflows/deploy-s3.yml).
 This action is triggered when something is pushed (or merged) to `devel`
 branch`.  When triggered, the workflow does:
 
