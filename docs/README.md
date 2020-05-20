@@ -9,7 +9,7 @@
 ## Architecture overview
 
 GitHub Actions builds jekyll site in its build environment when a condition
-meets pre-defined criteria. The site content, then, transferred to S3.
+meets pre-defined criteria. The site content, then, is transferred to S3.
 
 An S3 bucket is configured so that it serves the contents to public.
 
