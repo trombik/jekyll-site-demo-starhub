@@ -59,7 +59,7 @@ If you want to use your own domain name for the site, you can do so by using
 [Route 53](https://aws.amazon.com/route53/) (additional configrations are
 required).
 
-If you want to restrcit access to a cetain group of people, you can do so by
+If you want to restrcit access to a certain group of people, you can do so by
 using
 [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html)
 (requires additional cost).
