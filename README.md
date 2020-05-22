@@ -4,6 +4,9 @@ This repository demonstrates how to deploy a static website on AWS S3. If you
 are web designer please read this README. If you would like to know how to
 deploy, read [docs/README.md](docs/README.md).
 
+The staging site URL is
+http://starhub-demo.s3-website-ap-northeast-1.amazonaws.com/
+
 ## Requirements
 
 * ruby (2.6, or at least 2.4)
